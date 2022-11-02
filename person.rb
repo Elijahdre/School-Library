@@ -1,6 +1,6 @@
 require 'securerandom'
 
-class Person 
+class Person
   attr_reader :id
   attr_accessor :name, :age
 
@@ -11,9 +11,9 @@ class Person
     @parent_permission = parent_permission
   end
 
-  def can_use_services? 
+  def can_use_services?
     of_age || @parent_permission
-  end  
+  end
 
   private
 
