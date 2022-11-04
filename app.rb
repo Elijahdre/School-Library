@@ -57,7 +57,7 @@ class App
     print 'Teacher\'s specialization: '
     specialization = gets.chomp
     @peoples.push(Teacher.new(age, specialization, name))
-    puts 'Teacher created successfully!'
+    puts 'Teacher created successfully!!'
   end
 
   def create_person
