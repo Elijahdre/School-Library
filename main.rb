@@ -21,7 +21,7 @@ def start_program
     choice = gets.chomp.to_i
     if choice.between?(1, 7)
       if choice == 7
-        puts 'Thank you for using this app!'
+        puts 'Welldone for using this app'
         exit
       else
         choose_operation(choice)

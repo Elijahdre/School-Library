@@ -27,7 +27,7 @@ class App
   end
 
   def create_student
-    puts 'Great!! lets create a student!'
+    puts 'Lets create a student!'
     print 'Student Name: '
     name = gets.chomp
     print 'Student Age: '
@@ -39,17 +39,17 @@ class App
     case permission
     when 'T'
       @peoples.push(Student.new(age, name, true, cl))
-      puts 'Student created successfully!'
+      puts 'You have created a Student successfully!'
     when 'F'
       @peoples.push(Student.new(age, name, false, cl))
-      puts 'Student created successfully!'
+      puts 'You have created a Student successfully!'
     else
       puts 'Invalid'
     end
   end
 
   def create_teacher
-    puts 'Great! Lets create a teacher.'
+    puts 'Lets create a teacher.'
     print 'Teacher name: '
     name = gets.chomp
     print 'Teacher Age: '
@@ -57,7 +57,7 @@ class App
     print 'Teacher\'s specialization: '
     specialization = gets.chomp
     @peoples.push(Teacher.new(age, specialization, name))
-    puts 'Teacher crated successfully!'
+    puts 'Teacher created successfully!'
   end
 
   def create_person
@@ -83,10 +83,10 @@ class App
   end
 
   def create_rental
-    puts 'Select a book from the following list by number'
+    puts 'Select a book from the list by number'
     list_books
     bk_choice = gets.chomp.to_i
-    puts 'Select a person from the following list by number (not id)'
+    puts 'Select a person from the list by number (not id)'
     list_peoples
     p_choice = gets.chomp.to_i
     print 'Enter today\'s date: '
