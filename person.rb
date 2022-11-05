@@ -2,7 +2,7 @@ require 'securerandom'
 require_relative 'decorators/nameable'
 require_relative 'decorators/capitalize_decorator'
 require_relative 'decorators/trimmer_decorator'
-require_relative 'rental'
+require_relative './rental'
 
 class Person < Nameable
   attr_reader :id
