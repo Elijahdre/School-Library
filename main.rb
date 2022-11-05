@@ -50,3 +50,5 @@ end
 def main
   start_program
 end
+
+main
