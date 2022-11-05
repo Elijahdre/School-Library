@@ -2,7 +2,7 @@ require 'securerandom'
 require_relative 'decorators/nameable'
 require_relative 'decorators/capitalize_decorator'
 require_relative 'decorators/trimmer_decorator'
-require_relative 'rental'
+require_relative './rental'
 
 class Person < Nameable
   attr_reader :id
@@ -10,7 +10,7 @@ class Person < Nameable
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     super()
-    @id = SecureRandom.uuid + Time.now.to_i.to_s
+    @id ||= rand(1..500)
     @age = age
     @name = name
     @parent_permission = parent_permission
@@ -18,7 +18,7 @@ class Person < Nameable
   end
 
   def can_use_services?
-    of_age? || @parent_permission
+    of_age? && @parent_permission
   end
 
   def correct_name
@@ -32,8 +32,6 @@ class Person < Nameable
   private
 
   def of_age?
-    return true if @age >= 18
-
-    false
+    @age >= 18
   end
 end
