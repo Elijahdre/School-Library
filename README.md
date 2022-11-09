@@ -67,7 +67,7 @@ $ rspec ./spec/#{filename}_spec.rb
 
 - GitHub: [![GitHub Badge](https://img.shields.io/badge/-Elijahdre-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/elijahdre)
 - Twitter: [![Twitter Badge](https://img.shields.io/badge/-Kingglijah-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/elijahdre)
-- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-Elijah_Odjegba-white?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://www.linkedin.com/in/elijah-odjegba-862708179/)
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-Elijah_Odjegba-white?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://www.linkedin.com/in/elijah-odjegba/)
 
 
 ## 🤝 Contributing
